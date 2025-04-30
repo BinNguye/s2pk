@@ -10,8 +10,9 @@ S2PK was created to address the need for a reliable and efficient cross-platform
 
 | Phase | Goal                                        | Status |
 | ----- | ------------------------------------------- | ------ |
-| v0.1  | Core package manager                        | ✅      |
+| v0.1  | Core package manager                        | ✅     |
 | v0.2  | Config file with default destination        | 🔜     |
+| v0.x  | Target .NET 10                              | 🔜     |
 | v1.0  | Stable "Release" version with documentation | 🔜     |
 
 ## 🧩 Tech Stack
@@ -33,11 +34,11 @@ s2pk unpack -p ./output.s2pk -d "%USERPROFILE%\Documents\EA Games\The Sims 2\Dow
 
 ## 🗓️ Update Cycle
 
-| Type             | Frequency        | Notes                                    |
-| ---------------- | ---------------- | ---------------------------------------- |
-| Minor Update     | Every 3–6 months | Small enhancements, non-breaking changes |
-| Patch Update     | As needed        | Bug fixes, security updates              |
-| Major Update[^1] | As needed        | Framework upgrades, major refactors      |
+| Type         | Frequency        | Notes                                    |
+| ------------ | ---------------- | ---------------------------------------- |
+| Minor Update | Every 3–6 months | Small enhancements, non-breaking changes |
+| Patch Update | As needed        | Bug fixes, security updates              |
+| Major Update | As needed        | Framework upgrades, major refactors      |
 
 - Reserve months: June (Mid-Year Chill) & December (End-Year Freeze)
 
@@ -55,10 +56,6 @@ s2pk unpack -p ./output.s2pk -d "%USERPROFILE%\Documents\EA Games\The Sims 2\Dow
 - Crisis Mode Activates if:
   - Critical vulnerabilities
   - Framework-breaking issues
-
-## 🔍 Footnotes
-
-- [^1]: At this early stage, major updates bump the minor version number. This usually involves re-targeting to the newest .NET LTS.
 
 ## 🗒️ License
 
