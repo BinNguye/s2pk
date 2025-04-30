@@ -50,7 +50,7 @@ public static class PackageManager
     {
         if (string.IsNullOrEmpty(destination))
         {
-            var config = Config.Load("s2pk.toml"); // TODO: Config file should be in application directory
+            var config = Config.Load("s2pk.toml"); // TODO: Config file should be in home directory
             destination = config.Destination;
         }
 
