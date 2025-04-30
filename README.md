@@ -33,10 +33,10 @@ s2pk unpack -p ./output.s2pk -d "%USERPROFILE%\Documents\EA Games\The Sims 2\Dow
 
 ## 🗓️ Update Cycle
 
-| Type         | Frequency        | Notes                                    |
-| ------------ | ---------------- | ---------------------------------------- |
-| Minor Update | Every 3–6 months | Small enhancements, non-breaking changes |
-| Patch Update | As needed        | Bug fixes, security updates              |
+| Type             | Frequency        | Notes                                    |
+| ---------------- | ---------------- | ---------------------------------------- |
+| Minor Update     | Every 3–6 months | Small enhancements, non-breaking changes |
+| Patch Update     | As needed        | Bug fixes, security updates              |
 | Major Update[^1] | As needed        | Framework upgrades, major refactors      |
 
 - Reserve months: June (Mid-Year Chill) & December (End-Year Freeze)

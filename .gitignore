@@ -546,3 +546,4 @@ FodyWeavers.xsd
 .idea/**
 *.s2pk
 s2pk.toml
+dist/**
