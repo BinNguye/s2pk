@@ -11,6 +11,7 @@ public static class PackageManager
     {
         var dir = new DirectoryInfo(source);
         var file = new FileInfo(output);
+
         if (!dir.Exists)
         {
             Console.Error.WriteLine("Source directory does not exist.");

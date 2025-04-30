@@ -37,7 +37,7 @@ s2pk unpack -p ./output.s2pk -d "%USERPROFILE%\Documents\EA Games\The Sims 2\Dow
 | ------------ | ---------------- | ---------------------------------------- |
 | Minor Update | Every 3–6 months | Small enhancements, non-breaking changes |
 | Patch Update | As needed        | Bug fixes, security updates              |
-| Major Update | As needed        | Framework upgrades, major refactors      |
+| Major Update[^1] | As needed        | Framework upgrades, major refactors      |
 
 - Reserve months: June (Mid-Year Chill) & December (End-Year Freeze)
 
@@ -55,6 +55,10 @@ s2pk unpack -p ./output.s2pk -d "%USERPROFILE%\Documents\EA Games\The Sims 2\Dow
 - Crisis Mode Activates if:
   - Critical vulnerabilities
   - Framework-breaking issues
+
+## 🔍 Footnotes
+
+- [^1]: At this early stage, major updates bump the minor version number. This usually involves re-targeting to the newest .NET LTS.
 
 ## 🗒️ License
 
