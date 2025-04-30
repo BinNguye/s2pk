@@ -46,12 +46,19 @@ public static class PackageManager
     /// </summary>
     /// <param name="package">The path to the package file.</param>
     /// <param name="destination">The destination directory. If not provided, the destination is read from the configuration file.</param>
-    public static void UnpackPackages(string package, string destination = "")
+    /// <param name="ts3">Whether to unpack for The Sims 3.</param>
+    public static void UnpackPackages(string package, string destination = "", bool ts3 = false)
     {
+        // If destination is not provided, read from configuration file
         if (string.IsNullOrEmpty(destination))
         {
             var config = Config.Load("s2pk.toml"); // TODO: Config file should be in home directory
-            destination = config.Destination;
+
+            // If The Sims 3 is not specified, use the default destination
+            if (!ts3)
+                destination = config.Games.Sims2;
+            else
+                destination = config.Games.Sims3;
         }
 
         var file = new FileInfo(package);
