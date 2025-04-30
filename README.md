@@ -47,7 +47,7 @@ While The Sims 2 runs well on Linux through Wine, especially with Lutris setups,
 You can build yourself with `make`, or use the installer script:
 
 ```shell
-./install.sh ./dist/s2pk-linux/s2pkg
+./install.sh ./dist/s2pk-linux/s2pk
 ```
 
 Make sure `~/.local/bin` is in your `PATH`:

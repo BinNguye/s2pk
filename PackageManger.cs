@@ -83,6 +83,12 @@ public static class PackageManager
         var file = new FileInfo(package);
         var dir = new DirectoryInfo(destination);
 
+        if (!file.FullName.Contains(extension))
+        {
+            Console.Error.WriteLine("Package file is not a valid.");
+            return;
+        }
+
         if (!file.Exists)
         {
             Console.Error.WriteLine("Package file does not exist.");
