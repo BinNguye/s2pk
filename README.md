@@ -2,6 +2,10 @@
 
 S2PK, or Sims 2 Package Manager, aims to provide a simple cross-platform solution to package management.
 
+💡 Why This Exists
+
+S2PK was created to address the need for a reliable and efficient cross-platform package management system for The Sims 2 on Linux and macOS. Players on these platforms often face challenges in managing mods due to the lack of a unified solution that their Windows counterparts solved a long time ago.
+
 ## 🛣️ Project Roadmap
 
 | Phase | Goal                                        | Status |
@@ -16,6 +20,16 @@ S2PK, or Sims 2 Package Manager, aims to provide a simple cross-platform solutio
 - C# (focused on clarity, safety, minimalism)
 - System.CommandLine for CLI parsing (no external libraries)
 - Pure backend logic (no UI planned)
+
+## Example
+
+```shell
+s2pkg pack -s ./mods -o output.s2pk
+```
+
+```
+s2pkg unpack -p ./output.s2pk -d "%USERPROFILE%\Documents\EA Games\The Sims 2\Downloads"
+```
 
 ## 🗓️ Update Cycle
 
