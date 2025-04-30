@@ -6,6 +6,7 @@ public static class PackageManager
 {
     const string PackageExtension = ".package";
     const string S2pkExtension = ".s2pk";
+    const string S3pkExtension = ".s3pk";
 
     /// <summary>
     /// Packs a directory into a package file.
@@ -16,6 +17,7 @@ public static class PackageManager
     {
         var dir = new DirectoryInfo(source);
         var file = new FileInfo(output);
+        var extention = S2pkExtension;
 
         if (!dir.Exists)
         {
@@ -56,9 +58,9 @@ public static class PackageManager
 
             // If The Sims 3 is not specified, use the default destination
             if (!ts3)
-                destination = config.Games.Sims2;
+                destination = config.Paths.Sims2;
             else
-                destination = config.Games.Sims3;
+                destination = config.Paths.Sims3;
         }
 
         var file = new FileInfo(package);

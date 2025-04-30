@@ -8,6 +8,12 @@ While The Sims 2 runs well on Linux through Wine, especially with Lutris setups,
 
 ``s2pk`` aims to fill this gap: a no-nonsense CLI utility for packaging, sharing, and managing mods across all platforms. It’s small, clean, and plays nicely with scripts, backups, and version control. In theory, it would be possible to use it on legacy front ends.
 
+## 🚀 Features
+
+- First-class CLI support for modders on non-Windows platforms
+- Custom default unpacking directory for The Sims 2 & 3
+- Pack ``.packages`` into portable ``.s2pk`` archives
+
 ## 🛣️ Project Roadmap
 
 | Phase | Goal                                        | Status |
