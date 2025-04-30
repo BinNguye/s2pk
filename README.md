@@ -1,7 +1,14 @@
 # 📦 Sims 2 Package Manager
 
-S2PKG, or Sims 2 Package Manager, aims to provide a simple cross-platform solution to package management.
+S2PK, or Sims 2 Package Manager, aims to provide a simple cross-platform solution to package management.
 
+## 🛣️ Project Roadmap
+
+| Phase | Goal                                        | Status |
+| ----- | ------------------------------------------- | ------ |
+| v0.1  | Core package manager                        | ✅      |
+| v0.2  | Config file with default destination        | 🔜     |
+| v1.0  | Stable "Release" version with documentation | 🔜     |
 
 ## 🧩 Tech Stack
 
@@ -35,6 +42,6 @@ S2PKG, or Sims 2 Package Manager, aims to provide a simple cross-platform soluti
   - Critical vulnerabilities
   - Framework-breaking issues
 
-## License
+## 🗒️ License
 
 I license this project under the GPL v3 license - see [LICENSE](LICENSE) for details.
