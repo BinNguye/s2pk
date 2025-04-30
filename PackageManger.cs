@@ -1,4 +1,4 @@
-namespace S2Pkg;
+namespace S2PK;
 
 using System.IO.Compression;
 
@@ -7,6 +7,11 @@ public static class PackageManager
     const string PackageExtension = ".package";
     const string S2pkExtension = ".s2pk";
 
+    /// <summary>
+    /// Packs a directory into a package file.
+    /// </summary>
+    /// <param name="source">The source directory.</param>
+    /// <param name="output">The output package file.</param>
     public static void PackPackages(string source, string output)
     {
         var dir = new DirectoryInfo(source);
@@ -36,8 +41,19 @@ public static class PackageManager
         Console.WriteLine($"Created {file.FullName} with {packageFiles.Length} files.");
     }
 
-    public static void UnpackPackages(string package, string destination)
+    /// <summary>
+    /// Unpacks a package file into a destination directory.
+    /// </summary>
+    /// <param name="package">The path to the package file.</param>
+    /// <param name="destination">The destination directory. If not provided, the destination is read from the configuration file.</param>
+    public static void UnpackPackages(string package, string destination = "")
     {
+        if (string.IsNullOrEmpty(destination))
+        {
+            var config = Config.Load("s2pk.toml"); // TODO: Config file should be in application directory
+            destination = config.Destination;
+        }
+
         var file = new FileInfo(package);
         var dir = new DirectoryInfo(destination);
 

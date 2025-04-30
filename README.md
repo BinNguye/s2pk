@@ -2,18 +2,25 @@
 
 S2PK, or Sims 2 Package Manager, aims to provide a simple cross-platform solution to package management.
 
-## 💡 Why This Exists
+## ❓ Why This Exists
 
-S2PK was created to address the need for a reliable and efficient cross-platform package management system for The Sims 2 on Linux and macOS. Players on these platforms often face challenges in managing mods due to the lack of a unified solution that their Windows counterparts solved a long time ago.
+While The Sims 2 runs well on Linux through Wine, especially with Lutris setups, and natively from macOS, only the Windows community had varies mod managers and installers compared to their cross-platform counterparts. Later installments addressed this dilemma, but TS2 never got that treatment.
+
+``s2pk`` aims to fill this gap: a no-nonsense CLI utility for packaging, sharing, and managing mods across all platforms. It’s small, clean, and plays nicely with scripts, backups, and version control. In theory, it would be possible to use it on legacy front ends.
 
 ## 🛣️ Project Roadmap
 
 | Phase | Goal                                        | Status |
 | ----- | ------------------------------------------- | ------ |
-| v0.1  | Core package manager                        | ✅     |
+| v0.1  | Core package manager                        | ✅      |
 | v0.2  | Config file with default destination        | 🔜     |
 | v0.x  | Target .NET 10                              | 🔜     |
 | v1.0  | Stable "Release" version with documentation | 🔜     |
+
+## 🎯 Stretch Goals
+
+- [ ] Manifest validation
+- [ ] ``s1pk`` soft fork
 
 ## 🧩 Tech Stack
 
@@ -22,7 +29,28 @@ S2PK was created to address the need for a reliable and efficient cross-platform
 - System.CommandLine for CLI parsing (no external libraries)
 - Pure backend logic (no UI planned)
 
-## Example
+## 📐 Design Principles
+
+- Stay true to UNIX design philosophy
+- Simple with no bloat or feature creep
+- Portable and clean
+
+## 🛠️ Installation
+
+You can build yourself with ``make``, or use the installer script:
+
+```shell
+./install.sh ./dist/s2pk-linux/s2pkg
+```
+
+Make sure ``~/.local/bin`` is in your ``PATH``:
+
+```shell
+echo 'export PATH="$HOME/.local/bin:$PATH"' >> ~/.bashrc
+source ~/.bashrc
+```
+
+## 🗜️ Usage
 
 ```shell
 s2pk pack -s ./mods -o output.s2pk

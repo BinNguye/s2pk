@@ -1,4 +1,3 @@
-using S2Pkg;
 using System.CommandLine;
 
 var rootCommand = new RootCommand("The Sims 2 .s2pk Package Manager");
@@ -32,8 +31,7 @@ var packageOption = new Option<string>(
 
 var destinationOption = new Option<string>(
     aliases: ["--destination", "-d"],
-    description: "Destination directory (e.g., The Sims 2 Downloads folder)")
-{ IsRequired = true };
+    description: "Destination directory (e.g., The Sims 2 Downloads folder)");
 
 // Unpack command
 var unpackCommand = new Command("unpack", "Unpacks a .s2pk archive to the Downloads folder")
