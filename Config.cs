@@ -2,7 +2,7 @@ namespace S2PK;
 
 public class Config
 {
-    public Destination Games { get; set; } = new();
+    public Destinations Paths { get; set; } = new();
 
     /// <summary>
     /// Loads the configuration from the specified file path.
@@ -13,11 +13,11 @@ public class Config
     {
         var file = File.ReadAllText(path);
         var config = Toml.ToModel<Config>(file);
-        return config;
+        return config ?? throw new FileNotFoundException("Configuration file not found.");
     }
 }
 
-public class Destination
+public class Destinations
 {
     public string Sims2 { get; set; } = string.Empty;
     public string Sims3 { get; set; } = string.Empty;
