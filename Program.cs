@@ -3,12 +3,12 @@ using System.CommandLine;
 
 var rootCommand = new RootCommand("The Sims 2 .s2pk Package Manager");
 
-var sourceOption = new Option<DirectoryInfo>(
+var sourceOption = new Option<string>(
     aliases: ["--source", "-s"],
     description: "Source directory containing .package files")
 { IsRequired = true };
 
-var outputOption = new Option<FileInfo>(
+var outputOption = new Option<string>(
     aliases: ["--output", "-o"],
     description: "Destination .s2pk archive file")
 { IsRequired = true };
@@ -25,12 +25,12 @@ packCommand.SetHandler((source, output) =>
     PackageManager.PackPackages(source, output);
 }, sourceOption, outputOption);
 
-var packageOption = new Option<FileInfo>(
+var packageOption = new Option<string>(
     aliases: ["--package", "-p"],
     description: "Input .s2pk archive")
 { IsRequired = true };
 
-var destinationOption = new Option<DirectoryInfo>(
+var destinationOption = new Option<string>(
     aliases: ["--destination", "-d"],
     description: "Destination directory (e.g., The Sims 2 Downloads folder)")
 { IsRequired = true };

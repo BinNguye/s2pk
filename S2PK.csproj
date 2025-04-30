@@ -6,6 +6,10 @@
     <Version>0.1.101</Version>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+    <Authors>Tony Bark</Authors>
+    <PackAsTool>true</PackAsTool>
+    <ToolCommandName>s2pk</ToolCommandName>
+    <PackageId>s2pk</PackageId>
   </PropertyGroup>
 
   <ItemGroup>

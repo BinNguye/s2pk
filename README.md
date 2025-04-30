@@ -24,11 +24,11 @@ S2PK was created to address the need for a reliable and efficient cross-platform
 ## Example
 
 ```shell
-s2pkg pack -s ./mods -o output.s2pk
+s2pk pack -s ./mods -o output.s2pk
 ```
 
-```
-s2pkg unpack -p ./output.s2pk -d "%USERPROFILE%\Documents\EA Games\The Sims 2\Downloads"
+```shell
+s2pk unpack -p ./output.s2pk -d "%USERPROFILE%\Documents\EA Games\The Sims 2\Downloads"
 ```
 
 ## 🗓️ Update Cycle
