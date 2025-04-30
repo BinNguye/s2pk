@@ -6,27 +6,28 @@ S2PK, or Sims 2 Package Manager, aims to provide a simple cross-platform solutio
 
 While The Sims 2 runs well on Linux through Wine, especially with Lutris setups, and natively from macOS, only the Windows community had varies mod managers and installers compared to their cross-platform counterparts. Later installments addressed this dilemma, but TS2 never got that treatment.
 
-``s2pk`` aims to fill this gap: a no-nonsense CLI utility for packaging, sharing, and managing mods across all platforms. It’s small, clean, and plays nicely with scripts, backups, and version control. In theory, it would be possible to use it on legacy front ends.
+`s2pk` aims to fill this gap: a no-nonsense CLI utility for packaging, sharing, and managing mods across all platforms. It’s small, clean, and plays nicely with scripts, backups, and version control. In theory, it would be possible to use it on legacy front ends.
 
 ## 🚀 Features
 
 - First-class CLI support for modders on non-Windows platforms
 - Custom default unpacking directory for The Sims 2 & 3
-- Pack ``.packages`` into portable ``.s2pk`` archives
+- Pack `.packages` into portable `.s2pk` archives
 
 ## 🛣️ Project Roadmap
 
 | Phase | Goal                                        | Status |
 | ----- | ------------------------------------------- | ------ |
-| v0.1  | Core package manager                        | ✅      |
-| v0.2  | Config file with default destination        | 🔜     |
+| v0.1  | Core package manager                        | ✅     |
+| v0.2  | Config file with default paths              | ✅     |
+| v0.3  | Sims 3 support with `s3pk` extention        | 🔜     |
 | v0.x  | Target .NET 10                              | 🔜     |
 | v1.0  | Stable "Release" version with documentation | 🔜     |
 
 ## 🎯 Stretch Goals
 
 - [ ] Manifest validation
-- [ ] ``s1pk`` soft fork
+- [ ] `s1pk` soft fork
 
 ## 🧩 Tech Stack
 
@@ -43,13 +44,13 @@ While The Sims 2 runs well on Linux through Wine, especially with Lutris setups,
 
 ## 🛠️ Installation
 
-You can build yourself with ``make``, or use the installer script:
+You can build yourself with `make`, or use the installer script:
 
 ```shell
 ./install.sh ./dist/s2pk-linux/s2pkg
 ```
 
-Make sure ``~/.local/bin`` is in your ``PATH``:
+Make sure `~/.local/bin` is in your `PATH`:
 
 ```shell
 echo 'export PATH="$HOME/.local/bin:$PATH"' >> ~/.bashrc
