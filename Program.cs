@@ -2,6 +2,11 @@ using System.CommandLine;
 
 var rootCommand = new RootCommand("The Sims 2 .s2pk Package Manager");
 
+var sims3option = new Option<bool>(
+    aliases: ["--ts3"],
+    description: "Switch to The Sims 3 mode.",
+    getDefaultValue: () => false);
+
 var sourceOption = new Option<string>(
     aliases: ["--source", "-s"],
     description: "Source directory containing .package files")
@@ -19,10 +24,10 @@ var packCommand = new Command("pack", "Packs .package files into a .s2pk archive
     outputOption
 };
 
-packCommand.SetHandler((source, output) =>
+packCommand.SetHandler((source, output, sims3) =>
 {
-    PackageManager.PackPackages(source, output);
-}, sourceOption, outputOption);
+    PackageManager.PackPackages(source, output, sims3);
+}, sourceOption, outputOption, sims3option);
 
 var packageOption = new Option<string>(
     aliases: ["--package", "-p"],
@@ -40,10 +45,10 @@ var unpackCommand = new Command("unpack", "Unpacks a .s2pk archive to the Downlo
     destinationOption
 };
 
-unpackCommand.SetHandler((package, destination) =>
+unpackCommand.SetHandler((package, destination, sims3) =>
 {
-    PackageManager.UnpackPackages(package, destination);
-}, packageOption, destinationOption);
+    PackageManager.UnpackPackages(package, destination, sims3);
+}, packageOption, destinationOption, sims3option);
 
 // Register commands
 rootCommand.AddCommand(packCommand);

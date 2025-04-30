@@ -9,15 +9,22 @@ public static class PackageManager
     const string S3pkExtension = ".s3pk";
 
     /// <summary>
+    /// Returns the extension for the package file.
+    /// </summary>
+    /// <param name="ts3">Whether to use the Sims 3 extension.</param>
+    /// <returns>The extension for the package file.</returns>
+    static string ExtensionHandler(bool ts3 = false) => ts3 ? S3pkExtension : S2pkExtension;
+
+    /// <summary>
     /// Packs a directory into a package file.
     /// </summary>
     /// <param name="source">The source directory.</param>
-    /// <param name="output">The output package file.</param>
-    public static void PackPackages(string source, string output)
+    /// <param name="package">The output package file.</param>
+    public static void PackPackages(string source, string package, bool ts3 = false)
     {
         var dir = new DirectoryInfo(source);
-        var file = new FileInfo(output);
-        var extention = S2pkExtension;
+        var file = new FileInfo(package);
+        var extension = ExtensionHandler(ts3);
 
         if (!dir.Exists)
         {
@@ -51,6 +58,8 @@ public static class PackageManager
     /// <param name="ts3">Whether to unpack for The Sims 3.</param>
     public static void UnpackPackages(string package, string destination = "", bool ts3 = false)
     {
+        var extension = ExtensionHandler(ts3);
+
         // If destination is not provided, read from configuration file
         if (string.IsNullOrEmpty(destination))
         {
@@ -63,12 +72,27 @@ public static class PackageManager
                 destination = config.Paths.Sims3;
         }
 
+        // Check if destination directory exists
+        if (!Directory.Exists(destination))
+        {
+            Console.Error.WriteLine("Destination directory does not exist.");
+            return;
+        }
+
+
         var file = new FileInfo(package);
         var dir = new DirectoryInfo(destination);
 
         if (!file.Exists)
         {
             Console.Error.WriteLine("Package file does not exist.");
+            return;
+        }
+
+        // Check for extension mismatch
+        if (file.FullName.Contains(S3pkExtension) && !ts3)
+        {
+            Console.Error.WriteLine("Package is for The Sims 3 but unpacking for The Sims 2.");
             return;
         }
 
