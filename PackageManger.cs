@@ -28,14 +28,14 @@ public static class PackageManager
 
         if (!dir.Exists)
         {
-            Console.Error.WriteLine("Source directory does not exist.");
+            Log.Error("Source directory does not exist.");
             return;
         }
 
         var packageFiles = dir.GetFiles($"*{PackageExtension}", SearchOption.AllDirectories);
         if (packageFiles.Length == 0)
         {
-            Console.Error.WriteLine("No .package files found to pack.");
+            Log.Error("No .package files found to pack.");
             return;
         }
 
@@ -75,7 +75,7 @@ public static class PackageManager
         // Check if destination directory exists
         if (!Directory.Exists(destination))
         {
-            Console.Error.WriteLine("Destination directory does not exist.");
+            Log.Error("Destination directory does not exist.");
             return;
         }
 
@@ -85,21 +85,21 @@ public static class PackageManager
 
         if (!file.Exists)
         {
-            Console.Error.WriteLine("Package file does not exist.");
+            Log.Error("Package file does not exist.");
             return;
         }
 
 
         if (!file.FullName.Contains(extension))
         {
-            Console.Error.WriteLine("Package file is not a valid.");
+            Log.Error("Package file is not a valid.");
             return;
         }
 
         // Check for extension mismatch
         if (file.FullName.Contains(S3pkExtension) && !ts3)
         {
-            Console.Error.WriteLine("Package is for The Sims 3 but unpacking for The Sims 2.");
+            Log.Error("Package is for The Sims 3 but unpacking for The Sims 2.");
             return;
         }
 
@@ -113,7 +113,7 @@ public static class PackageManager
             // Sanitize path to prevent directory traversal
             if (!fullPath.StartsWith(dir.FullName, StringComparison.OrdinalIgnoreCase))
             {
-                Console.Error.WriteLine($"Skipping unsafe path: {entry.FullName}");
+                Log.Error($"Skipping unsafe path: {entry.FullName}");
                 continue;
             }
 

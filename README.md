@@ -26,7 +26,7 @@ While The Sims 2 runs well on Linux through Wine, especially with Lutris setups,
 | ----- | ------------------------------------------- | ------ |
 | v0.1  | Core package manager                        | ✅     |
 | v0.2  | Config file with default paths              | ✅     |
-| v0.3  | Sims 3 support with `s3pk` extention        | 🔜     |
+| v0.3  | Sims 3 support with `s3pk` extension        | 🔜     |
 | v0.x  | Target .NET 10                              | 🔜     |
 | v1.0  | Stable "Release" version with documentation | 🔜     |
 

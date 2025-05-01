@@ -2,6 +2,14 @@ using System.CommandLine;
 
 var rootCommand = new RootCommand("The Sims 2 .s2pk Package Manager");
 
+Log.Logger = new LoggerConfiguration()
+#if DEBUG
+    .WriteTo.Debug()
+#else
+    .WriteTo.Console(theme: AnsiConsoleTheme.Code)
+#endif
+    .CreateLogger();
+
 var sims3option = new Option<bool>(
     aliases: ["--ts3"],
     description: "Switch to The Sims 3 mode.",

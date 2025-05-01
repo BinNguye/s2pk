@@ -1,7 +1,7 @@
 [Desktop Entry]
-Name=s2pk
+Name=Sims 2 Package Manager
 Exec=s2pk
-Icon=s2pk
+Icon=logo.svg
 Type=Application
 Categories=Utility;
 Terminal=true
