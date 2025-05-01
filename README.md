@@ -1,4 +1,7 @@
-# 📦 Sims 2 Package Manager
+# <img title="" src="AppDir/logo.png" width="30" alt="""> Sims 2 Package Manager
+
+<p align="center">
+<img alt="GitHub License" src="https://img.shields.io/github/license/tonytins/s2pk"> <img alt="GitHub Pull Requests" src="https://img.shields.io/github/issues-pr/tonytins/s2pk"> <img alt="GitHub Issues" src="https://img.shields.io/github/issues/tonytins/s2pk">
 
 S2PK, or Sims 2 Package Manager, aims to provide a simple cross-platform solution to package management.
 
