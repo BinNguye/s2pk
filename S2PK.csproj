@@ -8,6 +8,7 @@
     <Nullable>enable</Nullable>
     <Authors>Tony Bark</Authors>
     <PackAsTool>true</PackAsTool>
+    <AssemblyName>s2pk</AssemblyName>
     <ToolCommandName>s2pk</ToolCommandName>
     <PackageId>s2pk</PackageId>
   </PropertyGroup>

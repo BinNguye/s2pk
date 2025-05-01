@@ -1,0 +1,18 @@
+version: 1
+AppDir:
+  path: ./AppDir
+  app_info:
+    id: com.tonybark.s2pk
+    name: s2pk
+    icon: s2pk
+    version: 0.3.101
+    exec: usr/bin/s2pk
+    exec_args: ""
+  runtime:
+    env:
+      PATH: "$APPDIR/usr/bin:$PATH"
+
+recipe:
+  AppImage:
+    arch: x86_64
+    output: s2pk-x86_64.AppImage

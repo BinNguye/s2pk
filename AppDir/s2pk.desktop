@@ -1,0 +1,7 @@
+[Desktop Entry]
+Name=s2pk
+Exec=s2pk
+Icon=s2pk
+Type=Application
+Categories=Utility;
+Terminal=true
