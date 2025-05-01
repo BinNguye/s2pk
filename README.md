@@ -39,7 +39,7 @@ While The Sims 2 runs well on Linux through Wine, especially with Lutris setups,
 
 - .NET 8.0
 - C# (focused on clarity, safety, minimalism)
-- System.CommandLine for CLI parsing (no external libraries)
+- System.CommandLine for CLI parsing
 - Pure backend logic (no UI planned)
 
 ## 📐 Design Principles
