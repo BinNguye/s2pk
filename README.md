@@ -1,5 +1,8 @@
-# <img title="" src="AppDir/logo.png" width="30" alt="""> Sims 2 Package Manager
+# 📦 Sims 2 Package Manager
 
+<p align="center">
+<img title="" src="AppDir/logo.png" width="150" alt=""">
+</p>
 <p align="center">
 <img alt="GitHub License" src="https://img.shields.io/github/license/tonytins/s2pk"> <img alt="GitHub Pull Requests" src="https://img.shields.io/github/issues-pr/tonytins/s2pk"> <img alt="GitHub Issues" src="https://img.shields.io/github/issues/tonytins/s2pk">
 
